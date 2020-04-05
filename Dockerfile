@@ -1,22 +1,16 @@
-FROM python:3.6-slim-stretch
+FROM python:3.7-slim-stretch
 
-RUN apt update && \
-    apt install -y python3-dev gcc
+RUN apt-get update && apt-get install -y git python3-dev gcc \
+    && rm -rf /var/lib/apt/lists/*
 
-WORKDIR app 
-# Install pytorch and fastai
-#RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+COPY requirements.txt .
 
-ADD requirements.txt .
-RUN pip install -r requirements.txt
-#pip install --no-cache-dir -r
-ADD models models
-ADD src src
+RUN pip install --upgrade -r requirements.txt
 
-# Run it once to trigger resnet download
-RUN python src/app.py prepare
+COPY app app/
 
-#EXPOSE 5000
+RUN python app/server.py
 
-# Start the server
-CMD ["python", "src/app.py", "serve"]
+EXPOSE 5000
+
+CMD ["python", "app/server.py", "serve"]
