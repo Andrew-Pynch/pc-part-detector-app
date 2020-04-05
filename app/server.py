@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = # MODEL FILE HERE
+export_file_url = 'https://drive.google.com/uc?export=download&id=1PSqh_wx-QD-vTEPsoGRTF6at07PoZ5S7'
 export_file_name = 'export.pkl'
 
 classes = ['CPU', 'GPU', 'KEYB', 'MOBO', 'MOUSE', 'PSU', 'RAM']
