@@ -1,25 +1,33 @@
-title: Food Images Classifier
-description: Classify food images using deep learning
+title: PC Part Detector
+description: Classify Images of PC Parts using Deep Learning!
 about:
-  This is a Food Images Classifier using Deep Learning built on top of Pytorch.
+  This is a deep learning model trained to classify the following categories of common PC Parts
+  - CPU's (Central Processing Units)
+  - GPU's (Graphics Processing Units)
+  - MOBO's (MotherBoards)
+  - PSU's (Power Supplies)
+  - RAM (RandoM Access Memory)
+  - Mouse (Does this need an explanation)
+  - Keyboard (This too????)
 
 
-  The project was build by [Nidhin Pattaniyil](https://npatta01.github.io)
-  and [Reshama Shaikh](https://reshamas.github.io)
+  The project was built by [Andrew Pynch](https://github.com/andrew-pynch)
 
 
-  More info and the source code can be found [here](https://github.com/npatta01/Bird-Classifier)
+  More info and the source code can be found [here](https://github.com/andrew-pynch/pc-part-detector-app)
 
-code: https://github.com/npatta01/web-deep-learning-classifier
+code: https://github.com/andrew-pynch/pc-part-detector-app
 
 sampleImages:
-  - name: lasagne
-    url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Lasagne_-_stonesoup.jpg
-  - name: sushi
-    url: https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg
-  - name: waffles
-    url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg
-  - name: eggplant (not in training data)
-    url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1280px-Solanum_melongena_24_08_2012_%281%29.JPG
-  - name: table (not in training & not a food)
-    url: https://image.shutterstock.com/image-photo/brown-light-wooden-round-dining-260nw-588358070.jpg 
+  - name: GPU
+    url: https://i.imgur.com/M6IDlLV.jpg
+  - name: CPU
+    url: https://i.imgur.com/jiswhrS.jpg
+  - name: RAM
+    url: https://i.imgur.com/J2v3bGm.jpg
+  - name: Mouse
+    url: https://i.imgur.com/RBMrVWV.jpg
+  - name: Keyboard
+    url: https://i.imgur.com/DUA7JT3.jpg
+  - name: Computer Case (Untrained PC Part)
+    url: https://i.imgur.com/zeo8Sl2.jpg
